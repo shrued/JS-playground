@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./client/styles.css" />
+    <title>Twitter</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="t__header">Twitter</h1>
+    </header>
+    <main>
+      <form class="t__form">
+        <label for="name">Name:</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Enter your name here"
+          required
+        />
+        <label for="content">Tweet:</label>
+        <textarea
+          name="content"
+          id="content"
+          rows="10"
+          maxlength="140"
+          required
+        ></textarea>
+        <button
+          class="t__button"
+          onclick="postTweet(document.getElementById('name').value, document.getElementById('content').value)"
+        >
+          Post
+        </button>
+      </form>
+      <div class="t__container">
+        <div class="tweet">
+          <p>User</p>
+          <p>sdfbrgfd <span class="tag_link">#tag</span></p>
+          <span class="date">23/45/2303</span>
+        </div>
+        <div class="tweet">
+          <p>sdfbrgfd <span class="user_link">@someone</span></p>
+          <span class="date">23/45/2303</span>
+        </div>
+        <div class="tweet">
+          <p>sdfbrgfd <span class="tag_link">#tag</span></p>
+          <span class="date">23/45/2303</span>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script src="./client/index.js"></script>
+</html>

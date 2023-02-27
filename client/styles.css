@@ -1,0 +1,65 @@
+:root {
+  --color-blue: rgb(23, 27, 135);
+}
+
+.t__header {
+  text-align: center;
+}
+
+.t__form {
+  display: flex;
+  flex-direction: column;
+  width: min(90%, 860px);
+  margin: 0 auto;
+  gap: 1rem;
+  text-align: center;
+}
+
+.t__form input {
+  padding: 1rem;
+}
+
+.t__form textarea {
+  padding: 1rem;
+  resize: vertical;
+}
+
+.t__button {
+  width: min(50%, 200px);
+  margin: 0 auto;
+  border: none;
+  background-color: var(--color-blue);
+  color: white;
+  padding: 1rem;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.t__button:hover {
+  background-color: rgb(47, 47, 150);
+}
+
+.t__container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.tweet {
+  margin: 1rem;
+  text-align: left;
+  padding: 0.8rem;
+  border-radius: 0.3rem;
+  background-color: rgb(198, 198, 198);
+}
+
+.tag_link,
+.user_link {
+  color: var(--color-blue);
+  cursor: pointer;
+}
+.tweet .date {
+  display: block;
+  text-align: right;
+}

@@ -1,0 +1,107 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --clr-blue: #244cfd;
+  --clr-dark-blue: #0227ca;
+  --clr-tweet-bg: #e6e6e6;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
+
+header {
+  width: min(90%, 860px);
+  margin: 2em auto;
+  text-align: center;
+}
+
+main {
+  width: min(90%, 860px);
+  margin: 5em auto;
+}
+
+.centering {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.t__form {
+  width: min(100%, 600px);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.t__form input {
+  padding: 15px;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+.t__form textarea {
+  resize: vertical;
+  padding: 15px;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+.t__form button {
+  border: none;
+  border-radius: 0.3rem;
+  background-color: var(--clr-blue);
+  min-width: 240px;
+  color: white;
+  font-weight: 700px;
+  font-size: 1.25rem;
+  padding: 0.5em;
+  cursor: pointer;
+  margin: 0 auto;
+  transition: background-color 0.3s ease;
+  text-transform: uppercase;
+}
+
+.t__form button:hover {
+  background-color: var(--clr-dark-blue);
+}
+
+.t__container {
+  margin: 5rem auto;
+  display: grid;
+  gap: 30px;
+}
+
+.tweet {
+  padding: 15px;
+}
+
+.tweet h3 {
+  cursor: pointer;
+}
+
+.t__content {
+  background-color: var(--clr-tweet-bg);
+  border-radius: 0.5em;
+  padding: 15px;
+}
+
+.t__content .date {
+  display: block;
+  text-align: right;
+  font-size: 0.875rem; /* 14px (14/16 = 0.875) */
+  opacity: 0.8;
+}
+
+.tag_link,
+.user_link {
+  color: var(--clr-blue);
+  cursor: pointer;
+}
